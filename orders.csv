@@ -1,0 +1,3 @@
+username,delivery_address,promocode,product_ids
+user1,"123 Main Street","DISCOUNT10","1,2"
+user,"456 Elm Street","SUMMER20","2,3"
