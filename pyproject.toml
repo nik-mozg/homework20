@@ -1,0 +1,41 @@
+[tool.ruff]
+# Выбор правил линтинга для проверки
+#select = ["F", "I", "E", "C", "Q", "UP"]  
+#select = ["F", "I", "E", "C", "Q", "UP", "D"]  
+select = ["F", "I"]  # Проверка ошибок и импортов
+# Устанавливаем максимальную длину строки
+line-length = 90  # Максимальная длина строки
+
+# Для включения Jupyter Notebooks 
+extend-include = ["*.ipynb"]
+
+# Дополнительные правила
+extend-select = ["UP", "D"]
+
+# Исключить некоторые ошибки
+# ignore = [
+#     "E501"  # Отключаем проверку длины строки
+# ]
+ignore = ["D100", "D101", "D102", "D103", "D105", "D106", "D212", "D200"]
+
+[tool.poetry]
+name = "mysite"
+version = "0.1.0"
+description = ""
+authors = ["nik-mozg <culex125@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.12.4"
+pillow = "11.0.0"
+asgiref= "3.8.1"
+Django= "5.1.3"
+django-filter= "24.3"
+djangorestframework= "3.15.2"
+pytz= "2024.2"
+sqlparse= "0.5.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -8,6 +8,6 @@ __pycache__/
 
 # Папка с результатами покрытия кода
 .coverage
-
+orders.csv
 # Конфигурация проекта Python (если она используется)
-pyproject.toml
+# pyproject.toml
